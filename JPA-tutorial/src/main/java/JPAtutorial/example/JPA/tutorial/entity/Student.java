@@ -35,7 +35,7 @@ public class Student {
     private String firstName;
     private String lastName;
     @Column(
-            name = "email_address",
+            name = "email_addres",
             nullable = false
     )
     private String emailId;
