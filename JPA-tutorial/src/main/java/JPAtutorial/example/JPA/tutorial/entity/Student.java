@@ -11,7 +11,6 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Table(
         name = "tbl_student",
         uniqueConstraints = @UniqueConstraint(
@@ -19,6 +18,7 @@ import javax.persistence.*;
                 columnNames = "email_address"
         )
 )
+@Builder
 public class Student {
 
     @Id
@@ -41,6 +41,6 @@ public class Student {
     private String emailId;
     private String guardianName;
     private String guardianEmail;
-    private Long guardianNMobile;
+    private Long guardianMobile;
 
 }
